@@ -66,6 +66,13 @@ dtbo-$(CONFIG_ARCH_TUNA) += display/trustedvm-kera-sde-display-atp-overlay.dtbo 
 		display/trustedvm-kera-sde-display-rcm-overlay.dtbo
 endif
 
+#OPLUS_DTS_OVERLAY start
+dtbo-y += oplus/dodge-23821-display-sun-overlay.dtbo
+dtbo-y += oplus/hummer-24811-display-sun-overlay.dtbo
+dtbo-y += oplus/erhai-24926-display-sun-overlay.dtbo
+dtbo-y += oplus/pagani-24821-display-sun-overlay.dtbo
+#OPLUS_DTS_OVERLAY end
+
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
