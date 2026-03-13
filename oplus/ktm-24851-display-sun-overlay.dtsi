@@ -1,10 +1,10 @@
-#include "panel/dsi-panel-AA590-P-3-A0020-dsc-cmd.dtsi"
+#include "panel/dsi-panel-AA605-P-7-A0020-dsc-cmd.dtsi"
 
 &soc {
-	oplus,dsi-display-dev {
+	oplus_display_dev: oplus,dsi-display-dev {
 		oplus,dsi-panel-primary = <
 			&dsi_vtdr6130_amoled_video
-			&dsi_panel_AA590_P_3_A0020_dsc_cmd
+			&dsi_panel_AA605_P_7_A0020_dsc_cmd
 		>;
 		oplus,dsi-panel-secondary = <
 		>;
@@ -58,4 +58,3 @@
 		drive-strength = <2>;  /* 2 mA */
 	};
 };
-
